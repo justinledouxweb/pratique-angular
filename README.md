@@ -21,81 +21,11 @@
 
 # Démarrer l'application en local
 
-Il y a plusieurs applications dans le projet. Il est possible de démarrer tout les applications, ou une application à la fois.
-
-- Démarrer tout les applications: `gulp dev-all`
-- Démarrer tout les applications: `gulp dev-privees`
-- Démarrer tout les applications: `gulp dev-gouvernementales`
-- Démarrer tout les applications: `gulp dev-dashboard`
-
-## Paramêtre possible
-- `--uid` est un paramêtre qui nous permet de changer d'utilisateur
-
-## Utilisateurs
-
-Si aucun paramêtre, le user sera un user interne BAnQ.
-
-### Utilisateurs Gouvernementals Externe
-
-|            Nom              |                  Responsabilité                  |          Role(s)        |  Username  |  Password  |         Courriel          |
-|-----------------------------|--------------------------------------------------|-------------------------|------------|------------|---------------------------|
-| Nom-Soutien, Prénom-Soutien |               SOU Soutien au GDA                 |   `SOUTIEN_ORGANISME`   | `01263935` | `94620692` | Pierre.Belisle@banq.qc.ca |
-|     Nom-GDA, Prénom-GDA     |    GDA Responsable de la gestion documentaire    | `RESPONSABLE_ORGANISME` | `01263936` | `47239389` | Pierre.Belisle@banq.qc.ca |
-|      Nom-CC, Prénom-CC      | CC Responsable de la demande d'approbation du CC |  `ARCHIVISTE_ORGANISME` | `01263937` | `41837171` | Pierre.Belisle@banq.qc.ca |
-
-### Utilisateurs internes
-
-|             Nom              |         Role(s)         |        Username      |       Password       |               Courriel                |
-|------------------------------|-------------------------|----------------------|----------------------|---------------------------------------|
-| Administrateur, Pistard      | `ADMIN_SYSTEME`         | `pistard_admin`      | `pistard_admin`      | test.pistard.admin@banq.qc.ca         |
-|                              | `ARCHIVISTE_ORGANISME`  |                      |                      |                                       |
-|                              | `RESPONSABLE_ORGANISME` |                      |                      |                                       |
-|                              | `SOUTIEN_ORGANISME`     |                      |                      |                                       |
-|                              |                         |                      |                      |                                       |
-| Pilote, Pistard              | `PILOTE`                | `pistard_pilote`     | `pistard_pilote`     | test.pistard.pilote@banq.qc.ca        |
-|                              | `ARCHIVISTE_ORGANISME`  |                      |                      |                                       |
-|                              | `RESPONSABLE_ORGANISME` |                      |                      |                                       |
-|                              | `SOUTIEN_ORGANISME`     |                      |                      |                                       |
-|                              |                         |                      |                      |                                       |
-| Professionnel, Pistard       | `PROFESSIONNEL`         | `pistard_pro`        | `pistard_pro`        | test.pistard.professionnel@banq.qc.ca |
-|                              | `ARCHIVISTE_ORGANISME`  |                      |                      |                                       |
-|                              | `RESPONSABLE_ORGANISME` |                      |                      |                                       |
-|                              | `SOUTIEN_ORGANISME`     |                      |                      |                                       |
-|                              |                         |                      |                      |                                       |
-| Technicien, Pistard          | `TECHNICIEN`            | `pistard_tech`       | `pistard_tech`       | test.pistard.tech@banq.qc.ca          |
-|                              | `ARCHIVISTE_ORGANISME`  |                      |                      |                                       |
-|                              | `RESPONSABLE_ORGANISME` |                      |                      |                                       |
-|                              | `SOUTIEN_ORGANISME`     |                      |                      |                                       |
-|                              |                         |                      |                      |                                       |
-| Coordonateur, Pistard        | `COORDONNATEUR`         | `pistard_coor`       | `pistard_coor`       | test.pistard.coordonateur@banq.qc.ca  |
-|                              | `ARCHIVISTE_ORGANISME`  |                      |                      |                                       |
-|                              | `RESPONSABLE_ORGANISME` |                      |                      |                                       |
-|                              | `SOUTIEN_ORGANISME`     |                      |                      |                                       |
-|                              |                         |                      |                      |                                       |
-| Directeur du comité, Pistard | `DIRECTEUR_COMITE`      | `pistard_dir_comite` | `pistard_dir_comite` | test.pistard.dir_comite@banq.qc.ca    |
-|                              | `ARCHIVISTE_ORGANISME`  |                      |                      |                                       |
-|                              | `RESPONSABLE_ORGANISME` |                      |                      |                                       |
-|                              | `SOUTIEN_ORGANISME`     |                      |                      |                                       |
-
-*************************************************************************************
-
-# Faire un build de l'application
-
-Executer l'une des commandes suivantes:
-
-- `gulp build --env dev`
-- `gulp build --env test`
-- `gulp build --env prod`
+- Démarrer tout les applications: `gulp dev`
 
 ## Executer les tests unitaires et la couverture de code
 
 Executer la commande `gulp unit`. Les tests unitaires sont aussi executé dans la tâche `gulp dev`.
-
-Afin de voir la couverture de code, ouvrer le fichier "coverage/PhantomJS/index.js" dans Chrome.
-
-## Executer les test E2E
-
-Executer la commande `gulp protractor`
 
 ## Executer la création de la documentation
 
@@ -143,9 +73,3 @@ Tout le SCSS doit suivre le style suivant:
 Tout les fichiers devraient être documenté avec la syntax de ng-docs.
 
 [Documentation](https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation)
-
-*************************************************************************************
-
-# Déploiement
-
-[Déploiement du back-end et du front-end](http://wiki.banq.qc.ca/confluence/pages/viewpage.action?pageId=10947839).
