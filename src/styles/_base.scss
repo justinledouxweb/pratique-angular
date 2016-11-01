@@ -1,0 +1,9 @@
+html,
+body {
+  font-size: $BASE_FONT_SIZE * 1px;
+  background-color: map-get($theme, 'light-gray');
+}
+
+main {
+  background-color: map-get($theme, 'white');
+}

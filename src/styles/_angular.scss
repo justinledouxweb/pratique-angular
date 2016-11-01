@@ -1,0 +1,9 @@
+ng-messages {
+  display: none;
+}
+
+.ng-submitted {
+  ng-messages {
+    display: block;
+  }
+}

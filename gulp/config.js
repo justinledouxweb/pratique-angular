@@ -70,7 +70,7 @@ module.exports = {
         // 'node_modules/angular-permission/dist/angular-permission-ng.js',
         // 'node_modules/angular-sanitize/angular-sanitize.min.js',
         'node_modules/angular-route/angular-route.min.js',
-        // 'node_modules/angular-messages/angular-messages.min.js',
+        'node_modules/angular-messages/angular-messages.min.js',
       ],
       dest: 'build/meteo/js',
     },

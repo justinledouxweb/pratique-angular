@@ -1,0 +1,26 @@
+<section>
+  <form name="form" ng-submit="$ctrl.submit(form)" novalidate>
+    <label for="ajouter-temperature">
+      Ajouter une température
+    </label>
+
+    <div>
+      <input
+        type="number"
+        name="ajouterTemperature"
+        id="ajouter-temperature"
+        ng-model="$ctrl.ajouterTemperature"
+        ng-pattern="/[0-9]/"
+        required>
+      <span>&deg;C</span>
+    </div>
+
+    <ng-messages for="form.ajouterTemperature.$error">
+      <ng-message when="required">
+        Ce champs est requis
+      </ng-message>
+    </ng-messages>
+
+    <button type="submit">Ajouter</button>
+  </form>
+</section>
