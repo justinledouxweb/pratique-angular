@@ -1,3 +1,13 @@
-<ajouter-temperature></ajouter-temperature>
-<suivi-temperature></suivi-temperature>
-<calcule-temperature></calcule-temperature>
+<ajouter-temperature
+  ajouter-temperature="$ctrl.ajouterTemperature(data)">
+</ajouter-temperature>
+
+<hr>
+
+<liste-temperature
+  liste-temperature="$ctrl.listeTemperature">
+</liste-temperature>
+
+<calcul-temperature
+  liste-temperature="$ctrl.listeTemperature">
+</calcul-temperature>

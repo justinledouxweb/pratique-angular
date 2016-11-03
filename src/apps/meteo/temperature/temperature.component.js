@@ -4,7 +4,6 @@ import controller from './temperature.controller.js';
 const TemperatureComponent = {
   template,
   controller,
-  bindings: {},
 };
 
 export default TemperatureComponent;

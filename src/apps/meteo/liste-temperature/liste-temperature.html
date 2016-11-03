@@ -1,0 +1,12 @@
+<section>
+  <h2>Liste des températures</h2>
+
+  <ul class="list list--date">
+    <li ng-repeat="temp in $ctrl.listeTemperature">
+      <p>{{ ::temp.temperature }}&deg;C</p>
+      <time datetime="{{ ::temp.date }}">
+        {{ ::temp.date | date:'dd MMMM yyyy'}}
+      </time>
+    </li>
+  </ul>
+</section>

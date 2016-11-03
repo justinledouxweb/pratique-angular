@@ -4,6 +4,9 @@ import controller from './ajouter-temperature.controller.js';
 const AjouterTemperatureComponent = {
   template,
   controller,
+  bindings: {
+    ajouterTemperature: '&',
+  },
 };
 
 export default AjouterTemperatureComponent;

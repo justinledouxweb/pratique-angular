@@ -1,0 +1,9 @@
+.btn {
+  border: 4px;
+  padding: 14px;
+
+  &.btn--primaire {
+    color: map-get($theme, 'white');
+    background-color: map-get($theme, 'secondaire');
+  }
+}

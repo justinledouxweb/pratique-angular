@@ -1,5 +1,10 @@
 ng-messages {
   display: none;
+
+  ng-message {
+    color: red;
+    font-style: italic;
+  }
 }
 
 .ng-submitted {

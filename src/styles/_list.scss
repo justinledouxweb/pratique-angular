@@ -1,0 +1,25 @@
+.list {
+  > li {
+    @extend .clearfix;
+    padding: 10px 15px;
+
+    &:nth-child(odd) {
+      background-color: map-get($theme, 'light-primaire');
+    }
+
+    > p {
+      display: inline-block;
+      width: calc(100% - 150px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      float: left;
+    }
+
+    > time {
+      float: right;
+      opacity: .5;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<section>
+  <h2>Calculs sur la temperature</h2>
+
+  <div class="pills">
+    <label>Médiane</label>
+    <p>{{ $ctrl.listeTemperature | mediane }}</p>
+  </div>
+
+  <div class="pills">
+    <label>Moyenne</label>
+    <p>{{ $ctrl.listeTemperature | moyenne }}</p>
+  </div>
+
+  <div class="pills">
+    <label>Max</label>
+    <p>{{ $ctrl.listeTemperature | max }}</p>
+  </div>
+
+  <div class="pills">
+    <label>Min</label>
+    <p>{{ $ctrl.listeTemperature | min }}</p>
+  </div>
+</section>
